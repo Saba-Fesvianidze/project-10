@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/b05f4c9c1f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <style>
+        *{box-sizing:border-box;padding:0;margin:0;}
+        .nav{
+            list-style:none;
+            padding:0;
+            margin:0;
+        }
+        .nav li{
+            float:right;
+            padding:10px;
+        }
+        .nav li:hover{
+            background-color:grey;
+            color:white;
+        }
+        .header{
+            display:flex;
+            justify-content:center;
+            flex-direction: column;
+            text-align:center;
+            margin-top:30px;
+            line-height:50px;
+        }
+        #but1{
+            width:150px;
+            border:none;
+            background-color:grey;
+            color:white;
+            padding:7px;
+            margin: auto;
+            margin-top:10px;
+        }
+        #but1:hover{
+            background-color:#aaa;
+            color:white;
+        }
+        .wrapper{
+            max-width:1500px;
+            margin:auto;
+            display:flex;
+            flex-direction:row;
+            flex-wrap:nowrap;
+            padding:30px;
+            gap:5px;
+        }
+        .wrapper .left{
+           flex:33.33%;
+        }
+        .wrapper .center{
+            flex:33.33%;
+        }
+        .wrapper .right{
+            flex:33.33%;
+        }
+        .wrapper img{
+            opacity:0.7;
+            transition:0.7s ease;
+        }
+        .wrapper img:hover{
+            opacity:1;
+        }
+        .footer{
+            background-color:#aaa;
+            padding:30px;
+        }
+        .nav2{
+            display:flex;
+            justify-content: center;
+        }
+        .nav2 i{
+            font-size:18px;
+            margin-right: 7px;
+            opacity:0.8;
+        }
+        .nav2 i:hover{
+            color: white;
+        }
+        .footer p{
+            text-align: center;
+            margin-top:5px;
+            color:white;
+            font-weight:bolder;
+        }
+        .footer p a{
+            text-decoration:none;
+            color:white;
+        }
+        .footer p a:hover{
+            color:crimson;
+        }
+        @media only screen and (max-width:600px){
+            .wrapper{
+                flex-direction: column;
+            }
+        }
+    </style>
+    <div class="nav">
+        <li><i class="fa-sharp fa-solid fa-bars"></i></li>
+    </div><br>
+    <div class="header">
+        <h1>PHOTOLIO</h1>
+        <p>A template made by Saba Fesvianidze for photographers.</p>
+        <button id="but1">Toggle Grid Padding</button>
+    </div>
+
+    <div class="wrapper">
+        <div class="left">
+            <img style="width:100%;height:auto;" src="https://www.w3schools.com/w3images/rocks.jpg">
+            <img style="width:100%;height:auto;" src="https://www.w3schools.com/w3images/sound.jpg">
+            <img style="width:100%;height:auto;" src="https://www.w3schools.com/w3images/woods.jpg">
+            <img style="width:100%;height:auto;" src="https://www.w3schools.com/w3images/rock.jpg">
+            <img style="width:100%;height:auto;" src="https://www.w3schools.com/w3images/nature.jpg">
+            <img style="width:100%;height:auto;" src="https://www.w3schools.com/w3images/mist.jpg">
+        </div>
+        <div class="center">
+            <img style="width:100%;height:auto;" src="https://www.w3schools.com/w3images/coffee.jpg">
+            <img style="width:100%;height:auto;" src="https://www.w3schools.com/w3images/bridge.jpg">
+            <img style="width:100%;height:auto;" src="https://www.w3schools.com/w3images/notebook.jpg">
+            <img style="width:100%;height:auto;" src="https://www.w3schools.com/w3images/london.jpg">
+            <img style="width:100%;height:auto;" src="https://www.w3schools.com/w3images/rocks.jpg">
+            <img style="width:100%;height:auto;" src="https://www.w3schools.com/w3images/avatar_g.jpg">
+        </div>
+        <div class="right">
+            <img style="width:100%;height:auto;" src="https://www.w3schools.com/w3images/mist.jpg">
+            <img style="width:100%;height:auto;" src="https://www.w3schools.com/w3images/workbench.jpg">
+            <img style="width:100%;height:auto;" src="https://www.w3schools.com/w3images/gondol.jpg">
+            <img style="width:100%;height:auto;" src="https://www.w3schools.com/w3images/skies.jpg">
+            <img style="width:100%;height:auto;" src="https://www.w3schools.com/w3images/lights.jpg">
+            <img style="width:100%;height:auto;" src="https://www.w3schools.com/w3images/workshop.jpg">
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="nav2">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-snapchat"></i>
+            <i class="fa-brands fa-pinterest-p"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Created by <a href="#">Saba Fesvianidze</a></p>
+    </div>
+
+</body>
+</html>
